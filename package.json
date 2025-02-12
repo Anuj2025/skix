@@ -5,8 +5,11 @@
   "type": "module",
   "homepage": "https://anuj2025.github.io/skix",
   "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+  "deploy": "gh-pages -d dist"
 },
   "dependencies": {
     "@blocknote/mantine": "^0.23.1",
@@ -18,6 +21,7 @@
     "react-hot-toast": "^2.5.1",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.5",
+    "react-scripts": "^5.0.1",
     "uuid": "^11.0.5"
   },
   "devDependencies": {

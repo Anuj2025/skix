@@ -8,6 +8,7 @@ import { useNavigate, Link } from "react-router-dom";
 import Loader from "../Components/Loader.tsx";
 import TaskContainer from "../Components/TaskContainer.tsx";
 import { toast } from "react-hot-toast";
+import ToolBar from "../Components/ToolBar"
 
 const Dashboard = () => {
   const db = getFirestore(app);
@@ -68,6 +69,7 @@ const Dashboard = () => {
     <>
       {User ? (
         <div className="w-full flex justify-center flex-wrap">
+        <ToolBar/>
           {Data.length > 0 ? (
             Data.map((doc) => (
               <TaskContainer

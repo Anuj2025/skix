@@ -6,14 +6,16 @@ import Auth from "./_Auth/Auth.tsx"
 import {toast, Toaster} from "react-hot-toast"
 import Editor from "./Pages/Editor"
 import Home from "./Pages/Home.tsx"
+import Navbar from "./Components/Navbar.tsx"
 
 const App = () => {
   return (
     <div>
+    <Navbar />
     <Toaster />
 <div>
-<div className="w-2 flex center text-center flex justify-center align-middle" >
-   <p className="flex mt-10 mr-10 relative float-right">Mode</p> <input type="checkbox" value="dark" className="flex mt-10 m-1.5 relative float-right toggle theme-controller" />
+<div className="w-2 m-[40px] flex center text-center flex justify-center align-middle" >
+<input type="checkbox" value="dark" className="flex mt-10 m-1.5 relative float-right toggle theme-controller" />
 </div>
 </div>
 <main>
